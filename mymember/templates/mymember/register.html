@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form method="POST">
+        {% csrf_token %}
+        ปีที่เข้าศึกษา <input name="year" type="text" required> <br>
+        ขื่อ <input name="alumni_name" type="text" required> <br>
+        ขื่อเล่น <input name="nickname" type="text" required> <br>
+        คณะที่เข้าศึกษา <input name="faculty" type="text" required> <br>
+        รหัสพนักงาน <input name="employee_code" type="text" required> <br>
+        <input id="submit" class="w-100 btn" type="submit" value="ลงทะเบียน">
+    </form>
+
+<a href="{% url 'index' %}">กลับหน้าแรก</a>
+</body>
+</html>

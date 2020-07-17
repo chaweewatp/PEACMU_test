@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for item in data %}
+        {{ item.year }} ชื่อ {{ item.name }} ชื่อเล่น {{ item.nickname }} คณะ {{ item.faculty }} รหัสพนักงาน {{ item.employee_code }}<br>
+    {% endfor %}
+
+<a href="{% url 'index' %}">กลับหน้าแรก</a>
+
+
+</body>
+</html>
