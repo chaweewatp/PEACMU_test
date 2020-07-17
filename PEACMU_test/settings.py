@@ -78,9 +78,14 @@ WSGI_APPLICATION = 'PEACMU_test.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'dc616rthpubl30',
+            'USER': 'hadsmafmjugjcf',
+            'PASSWORD': 'd044c8ab7bde43eebd12292ae4638f3dca11bd30a80f316b5c03d7d1d78d007c',
+            'HOST': 'ec2-54-86-170-8.compute-1.amazonaws.com',
+            'PORT': '5432',
+            'CONN_MAX_AGE': 500,
+        }
 }
 
 
